@@ -4,7 +4,9 @@ import "./styles.css";
 
 function HomeCard({name, img, id}) {
     return (
-         <div className="cardy m-auto">
+      <div className="container">
+        <div className="row">
+         <div className="cardy">
         <div className="card__image-container">
           <img className="card__image" src={img} alt="Places" style={{height:350, width:'100%', objectFit:'cover'}} />
        </div>
@@ -20,6 +22,8 @@ function HomeCard({name, img, id}) {
        <Link to={`/place/${id}`} className="card-btn"><button type="button" className="btn btn-outline-info mt-2" style={{marginLeft:'170px'}}>Experience</button></Link>
        </div>
      </div>
+     </div>
+      </div>
     )
 }
 

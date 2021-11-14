@@ -18,15 +18,13 @@ function HomeCardManager() {
     },[])
 
     return (
-    <div className="container" style={{marginTop:'4%'}}>
+    <div className="container row mt-3">
     {loading ? <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
     <div className="spinner-border text-info"></div> </div>: places.map((place, i) => {
         return (
-            <div key={i} className="row">
-               <div className="col-md-6 col-sm-12">
-                   <HomeCard name={place.name} img={place.mainPhoto} id={place._id} />
+               <div className="col-md-6 mt-3">
+                   <HomeCard key={i}  name={place.name} img={place.mainPhoto} id={place._id} />
                </div>
-            </div>
         )
     })}
   </div>
