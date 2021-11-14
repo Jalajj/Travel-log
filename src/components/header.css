@@ -1,0 +1,14 @@
+@media (max-width: 500px) {
+    .header-title{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size:1.3rem;
+        margin-bottom: 5% !important;
+    }
+    .btn-container .header-btn{
+         display:flex;
+         justify-content: center;
+         align-items: center;
+    }
+}

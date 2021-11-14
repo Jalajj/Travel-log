@@ -1,0 +1,22 @@
+.city-image{
+    height:70vh;
+    width:30vw;
+    object-fit: cover;
+}
+
+
+@media (max-width:500px){
+    .city-image{
+        width:90vw !important;
+        margin:auto;
+        text-align: center;
+    }
+    .city-container{
+        margin-top: 80px !important;
+    }
+}
+@media (max-width:750px){
+    .city-image{
+        width:80vw;
+    }
+}
